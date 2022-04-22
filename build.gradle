@@ -2,12 +2,14 @@
 
 buildscript {
     repositories {
-        jcenter()
         gradlePluginPortal()
         mavenCentral()
         maven {
             url 'https://maven.google.com/'
             name 'Google'
+        }
+        maven {
+            url "https://packagecloud.io/ringcaptcha/android/maven2"
         }
     }
     dependencies {
@@ -20,12 +22,14 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
         gradlePluginPortal()
         mavenCentral()
         maven {
             url 'https://maven.google.com/'
             name 'Google'
+        }
+        maven {
+            url "https://packagecloud.io/ringcaptcha/android/maven2"
         }
     }
 }
